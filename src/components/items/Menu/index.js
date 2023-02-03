@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "../../layout/navbar";
+import Footer from "../../layout/footer";
 
 const index = () => {
-  return <div>Menu</div>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 };
 
 export default index;

@@ -8,10 +8,10 @@ const index = () => {
   return (
     <>
       <Navbar />
-      <div class="content-section">
-        <div class="tittle">ABOUT US</div>
-        <div class="content">
-          <div class="isi-content">
+      <div className="content-section">
+        <div className="tittle">ABOUT US</div>
+        <div className="content">
+          <div className="isi-content">
             <h2>Profile</h2>
             <p>
               Fivenoodle is a restaurant that provides a healthy noodle food
@@ -37,41 +37,41 @@ const index = () => {
               Vietnamese pho, with a variety of healthy ingredients. Join us!
             </p>
 
-            <button href="" class="tbl">
+            <button href="" className="tbl">
               Hubungi
             </button>
             <br />
 
-            <div class="profil"></div>
+            <div className="profil"></div>
           </div>
           <img
-            class="img"
+            className="img"
             src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bm9vZGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt="gambar"
           />
         </div>
 
-        <div class="tittle2">PROFILE DIREKSI</div>
-        <div class="card-profile">
-          <article class="card-profile-item">
-            <img class="img" src={imgJas} alt="" />
-            <div class="konten">
+        <div className="tittle2">PROFILE DIREKSI</div>
+        <div className="card-profile">
+          <article className="card-profile-item">
+            <img className="img" src={imgJas} alt="" />
+            <div className="konten">
               <h2>stefan</h2>
               <h3>owner</h3>
               <p>Merupakan owner dari foodnoodle</p>
             </div>
           </article>
-          <article class="card-profile-item">
-            <img class="img" src={imgJas} alt="" />
-            <div class="konten">
+          <article className="card-profile-item">
+            <img className="img" src={imgJas} alt="" />
+            <div className="konten">
               <h2>Roy</h2>
               <h3>Manager</h3>
               <p>Merupakan Manager dari foodnoodle</p>
             </div>
           </article>
-          <article class="card-profile-item">
-            <img class="img" src={imgKoki} alt="" />
-            <div class="konten">
+          <article className="card-profile-item">
+            <img className="img" src={imgKoki} alt="" />
+            <div className="konten">
               <h2>Srono</h2>
               <h3>Kepala Chef</h3>
               <p>Merupakan Kepala chef dari foodnoodle</p>
