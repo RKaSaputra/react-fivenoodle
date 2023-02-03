@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
+import "../../../assets/css/home.css";
 import "../../../assets/css/contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

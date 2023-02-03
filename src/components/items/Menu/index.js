@@ -3,6 +3,7 @@ import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
 import { IonIcon } from "react-ion-icon";
 // import "../../../assets/css/home.css";
+import "../../../assets/css/home.css";
 import "../../../assets/css/menu.css";
 import greenUdonImg from "../../../assets/img/meal/green-udon.jpg";
 import img1 from "../../../assets/img/meal/img1.jpg";

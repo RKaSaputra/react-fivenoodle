@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
+import "../../../assets/css/home.css";
 import "../../../assets/css/blog.css";
 import img1 from "../../../assets/img/blog/img1.jpg";
 import img2 from "../../../assets/img/blog/img2.jpg";

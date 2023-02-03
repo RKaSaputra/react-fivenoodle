@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
+import "../../../assets/css/home.css";
 import "../../../assets/css/about.css";
 import imgKoki from "../../../assets/img/koki.jpg";
 import imgJas from "../../../assets/img/jas.jpg";
