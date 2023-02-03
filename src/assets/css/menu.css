@@ -699,7 +699,7 @@ a {
       rgba(255, 128, 0, 0.3),
       rgba(255, 153, 51, 0.35)
     ),
-    url("../img/Eating.jpg");
+    url("../img/Eating.webp");
   background-size: cover;
   background-position: center;
 }
