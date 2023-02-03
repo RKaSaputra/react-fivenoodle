@@ -1,8 +1,8 @@
 import React from "react";
 
-import meal1 from "./../../../assets/img/meal/vegetable-noodle.jpg";
-import meal2 from "./../../../assets/img/meal/spaghetti-vegan.jpg";
-import meal3 from "./../../../assets/img/meal/green-udon.jpg";
+import meal1 from "./../../../assets/img/meal/vegetable-noodle.webp";
+import meal2 from "./../../../assets/img/meal/spaghetti-vegan.webp";
+import meal3 from "./../../../assets/img/meal/green-udon.webp";
 import { IonIcon } from "react-ion-icon";
 import { flameOutline } from "ionicons/icons";
 import { restaurantOutline } from "ionicons/icons";
