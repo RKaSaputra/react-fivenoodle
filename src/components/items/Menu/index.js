@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
 import { IonIcon } from "react-ion-icon";
@@ -13,7 +13,40 @@ import img5 from "../../../assets/img/meal/img5.jpg";
 import spaghettiVegan from "../../../assets/img/meal/spaghetti-vegan.jpg";
 import vegetableNoodle from "../../../assets/img/meal/vegetable-noodle.jpg";
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    const menuNoodle = document.querySelectorAll(".nav-link-menu");
+    const foodItems = document.querySelectorAll(".meal");
+
+    let activeMenu = "all";
+
+    showFoodMenu(activeMenu);
+
+    menuNoodle.forEach((menu) => {
+      menu.addEventListener("click", () => {
+        resetActiveMenu();
+        showFoodMenu(menu.id);
+        menu.classList.add("main-color");
+      });
+    });
+
+    function resetActiveMenu() {
+      menuNoodle.forEach((menu) => {
+        menu.classList.remove("main-color");
+      });
+    }
+
+    function showFoodMenu(newMenu) {
+      activeMenu = newMenu;
+      foodItems.forEach((item) => {
+        if (item.classList.contains(activeMenu)) {
+          item.style.display = "grid";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+  }, []);
   return (
     <>
       <Navbar />
@@ -328,4 +361,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
