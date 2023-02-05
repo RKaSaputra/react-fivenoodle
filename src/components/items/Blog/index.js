@@ -12,7 +12,7 @@ import img5 from "../../../assets/img/blog/img5.jpg";
 const index = () => {
   return (
     <>
-      <Navbar />
+      <Navbar nav="blog" />
       <section className="section-blog">
         <div className="blog-container">
           <div className="blog-post-container">

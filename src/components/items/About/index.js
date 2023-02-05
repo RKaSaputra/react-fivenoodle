@@ -8,7 +8,7 @@ import imgJas from "../../../assets/img/jas.jpg";
 const index = () => {
   return (
     <>
-      <Navbar />
+      <Navbar nav="about" />
       <div className="content-section">
         <div className="tittle">ABOUT US</div>
         <div className="content">
