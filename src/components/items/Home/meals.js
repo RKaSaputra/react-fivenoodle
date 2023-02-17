@@ -7,7 +7,6 @@ import { IonIcon } from "react-ion-icon";
 import { flameOutline } from "ionicons/icons";
 import { restaurantOutline } from "ionicons/icons";
 import { starOutline } from "ionicons/icons";
-import { Link } from "react-router-dom";
 
 const meals = () => {
   return (
@@ -46,9 +45,9 @@ const meals = () => {
                 </li>
               </ul>
               <div class="details">
-                <Link to="/blog" class="link">
+                <a href="#" class="link">
                   More details &rarr;
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -77,9 +76,9 @@ const meals = () => {
                 </li>
               </ul>
               <div class="details">
-                <Link to="/blog" class="link">
+                <a href="#" class="link">
                   More details &rarr;
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -108,9 +107,9 @@ const meals = () => {
                 </li>
               </ul>
               <div class="details">
-                <Link to="/blog" class="link">
+                <a href="#" class="link">
                   More details &rarr;
-                </Link>
+                </a>
               </div>
             </div>
           </div>

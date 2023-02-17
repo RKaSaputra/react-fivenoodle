@@ -13,7 +13,7 @@ import {
 const index = () => {
   return (
     <>
-      <Navbar nav="contact" />
+      <Navbar />
       <section className="section-hero-contact">
         <div className="email-section">
           <div className="section-contact-left">
