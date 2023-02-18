@@ -147,85 +147,87 @@ const index = () => {
               </ul>
             </div>
           </div>
-          <div class="blog-sidebar-container">
-            <div className="blog-sidebar-container">
-              <div className="sidebar top">
-                <div className="search-container">
-                  <form className="form-search" method="GET" action="#">
-                    <input
-                      className="search-box"
-                      type="text"
-                      placeholder="Search..."
-                      required
-                      name="q"
-                      autocomplete="on"
-                    />
-                    <input
-                      id="btn"
-                      className="search-button"
-                      type="button"
-                      value="Search"
-                    />
-                  </form>
-                </div>
+
+          <div className="blog-sidebar-container">
+            <div className="sidebar top">
+              <div className="search-container">
+                <form className="form-search" method="GET" action="#">
+                  <input
+                    className="search-box"
+                    type="text"
+                    placeholder="Search..."
+                    required
+                    name="q"
+                    autocomplete="on"
+                  />
+                  <button
+                    id="btn"
+                    className="btn btn--full search-button"
+                    type="button"
+                    value="Search"
+                  >
+                    Search
+                  </button>
+                </form>
               </div>
-              <div className="sidebar center">
-                <div className="recent-post-container">
-                  <h2 className="subheading">Recent Posts</h2>
-                  <div className="recent-post-list-container">
-                    <ul className="post-list">
-                      <li className="list">
-                        <a href="#">
-                          <h5 className="list paragraph">
-                            [RECIPE] HOMEMADE GARLIC BUTTERFEBRUARY
-                          </h5>
-                          <span className="list info">FEBRUARY 15, 2021</span>
-                        </a>
-                      </li>
-                      <li className="list">
-                        <a href="#">
-                          <h5 className="list paragraph">
-                            URBAN FARM PIK – GOLF ISLAND PANTAI INDAH KAPUK,
-                            JAKARTA
-                          </h5>
-                          <br />
-                          <span className="list info">MAY 18, 2021</span>
-                        </a>
-                      </li>
-                      <li className="list">
-                        <a href="#">
-                          <h5 className="list paragraph">
-                            CARBON RESTAURANT – MD PLACE, SETIABUDI, JAKARTA
-                          </h5>
-                          <br />
-                          <span className="list info">MAY 19, 2021</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="sidebar bottom">
-                <div className="categories-container">
-                  <h2 className="subheading">Categories</h2>
-                  <ul className="categories list">
-                    <li className="category">
-                      <a href="#">Lifestyle</a>
+            </div>
+            <div className="sidebar center">
+              <div className="recent-post-container">
+                <h2 className="subheading">Recent Posts</h2>
+                <div className="recent-post-list-container">
+                  <ul className="post-list">
+                    <li className="list">
+                      <a href="#">
+                        <h5 className="list paragraph">
+                          [RECIPE] HOMEMADE GARLIC BUTTERFEBRUARY
+                        </h5>
+                        <span className="list info">FEBRUARY 15, 2021</span>
+                      </a>
                     </li>
-                    <li className="category">
-                      <a href="#">Health</a>
+                    <li className="list">
+                      <a href="#">
+                        <h5 className="list paragraph">
+                          URBAN FARM PIK – GOLF ISLAND PANTAI INDAH KAPUK,
+                          JAKARTA
+                        </h5>
+                        <br />
+                        <span className="list info">MAY 18, 2021</span>
+                      </a>
                     </li>
-                    <li className="category">
-                      <a href="#">Food</a>
-                    </li>
-                    <li className="category">
-                      <a href="#">Travel</a>
+                    <li className="list">
+                      <a href="#">
+                        <h5 className="list paragraph">
+                          CARBON RESTAURANT – MD PLACE, SETIABUDI, JAKARTA
+                        </h5>
+                        <br />
+                        <span className="list info">MAY 19, 2021</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+            <div className="sidebar bottom">
+              <div className="categories-container">
+                <h2 className="subheading">Categories</h2>
+                <ul className="categories list">
+                  <li className="category">
+                    <a href="#">Lifestyle</a>
+                  </li>
+                  <li className="category">
+                    <a href="#">Health</a>
+                  </li>
+                  <li className="category">
+                    <a href="#">Food</a>
+                  </li>
+                  <li className="category">
+                    <a href="#">Travel</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+
           <div className="post-page">
             <ul className="page-container">
               <li className="page">
