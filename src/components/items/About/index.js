@@ -3,6 +3,7 @@ import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
 import "../../../assets/css/home.css";
 import "../../../assets/css/about.css";
+import "../../../assets/css/queries.css";
 import about1 from "../../../assets/img/about/about1.webp";
 import about2 from "../../../assets/img/about/about2.webp";
 import about3 from "../../../assets/img/about/about3.webp";

@@ -26,6 +26,10 @@
   background-color: #ff99331f;
 }
 
+.img-about {
+  overflow: hidden;
+}
+
 .about-img {
   width: 100%;
   transition: all 0.3s;
