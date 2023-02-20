@@ -12,7 +12,7 @@ const index = () => {
       <Navbar />
       <section class="banner-about">
         <div class="banner-text heading-primary">
-          Our product first concern about food safety and premises hygiene
+          Our product first concern about <span>food safety and premises</span>
         </div>
       </section>
 

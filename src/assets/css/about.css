@@ -14,8 +14,12 @@
     url("/src/assets/img/banner-about.webp");
 }
 
+.heading-primary span {
+  color: #ff9933;
+}
+
 .subheading {
-  padding-top: 74px;
+  padding-top: 74px !important;
 }
 
 .section-about {
