@@ -83,3 +83,14 @@
   width: 24px;
   color: #ff7f00;
 }
+
+@media (max-width: 1300px) {
+  .nav-menu {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .nav-menu {
+    width: 80%;
+  }
+}
