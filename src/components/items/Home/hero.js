@@ -17,7 +17,7 @@ const hero = () => {
       <section class="banner">
         <video autoPlay muted loop class="banner-video" src={video}></video>
         <div class="banner-text heading-primary">
-          Start Eating Well Today, Try Our Revolutionary Noodle
+          Start Eating Well Today, Try <span>Our Revolutionary Noodle</span>
         </div>
       </section>
       <section class="section-hero">
