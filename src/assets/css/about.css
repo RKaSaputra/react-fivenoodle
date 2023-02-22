@@ -54,7 +54,7 @@
   justify-content: center;
 }
 
-.grid {
+.grid-about {
   display: grid;
   column-gap: 64px;
   row-gap: 24px !important;

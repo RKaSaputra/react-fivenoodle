@@ -34,7 +34,7 @@ const index = () => {
             way.
           </p>
 
-          <div class="container grid grid--2-cols grid--center">
+          <div class="container grid grid-about grid--2-cols grid--center">
             <div class="about-text-box">
               <p class="subheading">Our Copmany</p>
               <h3 class="heading-tertiary">

@@ -84,7 +84,7 @@ const Index = () => {
           </ul>
         </div>
 
-        <div className="container grid grid--3-cols margin-bottom-md">
+        <div className="container grid grid-menu grid--3-cols margin-bottom-md">
           <div className="meal noodle all">
             <img
               className="meal-img"
