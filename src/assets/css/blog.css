@@ -86,4 +86,7 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  .blog-container .blogs .post .post-image {
+    height: auto;
+  }
 }
