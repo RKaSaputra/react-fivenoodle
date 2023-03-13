@@ -205,6 +205,10 @@ strong {
   display: none;
 }
 
+.menu {
+  display: block;
+}
+
 /*/////// Sticky NAV - PURPOSE  ///////*/
 
 .header.sticky {

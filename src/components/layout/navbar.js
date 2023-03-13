@@ -52,6 +52,11 @@ const Navbar = () => {
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
+            <a href="/menu" class="btn btn--full">
+              Try Our Product
+            </a>
+          </li>
+          <li>
             <Link to={"/menu"} class="main-nav-link">
               Our Menu
             </Link>
