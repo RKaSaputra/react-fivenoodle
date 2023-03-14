@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
 import "../../../assets/css/home.css";
@@ -9,8 +9,32 @@ import {
   faLocationDot,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "@emailjs/browser";
 
-const index = () => {
+const Index = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hhxzgn2",
+        "template_mllknhs",
+        form.current,
+        "rgcvKj7Zdrp8uDAuE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <Navbar />
@@ -40,23 +64,19 @@ const index = () => {
           </div>
           <div className="section-contact-right">
             <h1>Send Us A Message</h1>
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <input
                 type="text"
                 name="fullname"
                 id="fullname"
                 placeholder="fullname"
               />
-              <input
-                type="text"
-                name="fullname"
-                id="fullname"
-                placeholder="phone"
-              />
+              <input type="text" name="email" id="email" placeholder="email" />
+              <input type="text" name="phone" id="phone" placeholder="phone" />
               <textarea
                 type="text"
-                name="fullname"
-                id="fullname"
+                name="yourmessage"
+                id="yourmessage"
                 rows="6"
                 placeholder="your message"
               ></textarea>
@@ -70,4 +90,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
