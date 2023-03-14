@@ -10,7 +10,7 @@ import about3 from "../../../assets/img/about/about3.webp";
 const index = () => {
   return (
     <>
-      <Navbar />
+      <Navbar activeBar="about-us" />
       <section class="banner-about">
         <div class="banner-text heading-primary">
           Our product first concern about <span>food safety and premises</span>

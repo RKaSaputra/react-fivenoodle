@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar activeBar="contact" />
       <section className="section-hero-contact">
         <div className="email-section">
           <div className="section-contact-left">

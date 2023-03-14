@@ -50,7 +50,7 @@ const Index = () => {
   }, []);
   return (
     <>
-      <Navbar />
+      <Navbar activeBar="our-menu" />
       <section className="section-meals">
         <div className="container center-text">
           <span className="subheading">Noodles</span>

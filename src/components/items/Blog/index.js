@@ -6,7 +6,7 @@ import "../../../assets/css/blog.css";
 const index = () => {
   return (
     <>
-      <Navbar />
+      <Navbar activeBar="blog" />
       <section className="banner-blog">
         <div className="banner-text heading-primary">
           Healthy Meals Made Easy <span>Discover Our Delicious Options </span>

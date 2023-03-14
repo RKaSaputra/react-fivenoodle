@@ -66,6 +66,10 @@ body {
   letter-spacing: 0.75px;
 }
 
+.active {
+  color: #ff7f00 !important;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
