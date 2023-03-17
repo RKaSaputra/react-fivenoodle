@@ -1,4 +1,105 @@
-.section-hero-contact {
+.contact {
+  padding: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact .getin {
+  width: 350px;
+}
+
+.contact .getin h2 {
+  color: #ff7f00;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+.contact .getin p {
+  color: #686875;
+  line-height: 24px;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e4ed;
+}
+
+.contact .getin h3 {
+  color: #2c234d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.contact .getin .getin-details div {
+  display: flex;
+}
+
+.contact .getin .getin-details div .get {
+  width: auto;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff7f00;
+  margin-right: 20px;
+}
+
+.contact .getin .getin-details div p {
+  font-size: 14px;
+  border-bottom: none;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.contact .form {
+  width: 60%;
+  background-color: #ffbf80;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.342);
+}
+
+.contact .form h4 {
+  font-size: 24px;
+  color: white;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.contact .form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact .form input,
+.contact .form textarea {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+  color: #7e7c87;
+  outline: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+
+.contact .form button {
+  font-size: 0.9rem;
+  padding: 13px 25px;
+  background: #ff7f00;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* .section-hero-contact {
   padding: 144px 96px 96px 96px;
   display: flex;
   justify-content: center;
@@ -38,7 +139,6 @@
   margin: 16px 0;
   border-radius: 20px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: flex-start;
   box-shadow: 5px 10px 8px -2px rgba(0, 0, 0, 0.29);
@@ -66,8 +166,6 @@
   margin-top: 48px;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
-  /* max-width: 1200px; */
   width: 70%;
   justify-content: space-between;
   background-color: #ffa54d;
@@ -80,15 +178,12 @@
   width: 40%;
 }
 .email-section .section-contact-right {
-  /* height: 100%; */
-  /* background-color: red; */
   width: 60%;
 }
 
 .email-section .section-contact-right h1 {
   margin-bottom: 24px;
   text-align: center;
-  /* line-height: 50px; */
   font-size: 30px;
   color: rgba(255, 255, 255, 0.965);
 }
@@ -132,7 +227,7 @@
 
 .email-section hr {
   width: 70%;
-}
+} */
 
 /* Tablet */
 @media only screen and (max-width: 780px) {

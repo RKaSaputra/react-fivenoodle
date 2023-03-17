@@ -12,7 +12,6 @@ const Navbar = ({ activeBar }) => {
 
   useEffect(() => {
     var tmp = Header();
-    console.log(activeBar);
     setData(tmp);
   }, []);
 
