@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import meal1 from "./../../../assets/img/meal/vegetable-noodle.webp";
 import meal2 from "./../../../assets/img/meal/spaghetti-vegan.webp";
@@ -116,9 +117,9 @@ const meals = () => {
         </div>
 
         <div class="container our-menu">
-          <a class="link" href="/components/our-menu.html">
+          <Link class="link" to={"/menu"}>
             See all our menu &rarr;
-          </a>
+          </Link>
         </div>
       </section>
     </div>

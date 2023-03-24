@@ -4,14 +4,14 @@ import Footer from "../../layout/footer";
 import { IonIcon } from "react-ion-icon";
 import "../../../assets/css/home.css";
 import "../../../assets/css/menu.css";
-import greenUdonImg from "../../../assets/img/meal/green-udon.webp";
-import img1 from "../../../assets/img/meal/img1.jpg";
-import img2 from "../../../assets/img/meal/img2.jpg";
-import img3 from "../../../assets/img/meal/img3.jpg";
-import img4 from "../../../assets/img/meal/img4.jpg";
-import img5 from "../../../assets/img/meal/img5.jpg";
-import spaghettiVegan from "../../../assets/img/meal/spaghetti-vegan.webp";
-import vegetableNoodle from "../../../assets/img/meal/vegetable-noodle.webp";
+// import greenUdonImg from "../../../assets/img/meal/green-udon.webp";
+// import img1 from "../../../assets/img/meal/img1.jpg";
+// import img2 from "../../../assets/img/meal/img2.jpg";
+// import img3 from "../../../assets/img/meal/img3.jpg";
+// import img4 from "../../../assets/img/meal/img4.jpg";
+// import img5 from "../../../assets/img/meal/img5.jpg";
+// import spaghettiVegan from "../../../assets/img/meal/spaghetti-vegan.webp";
+// import vegetableNoodle from "../../../assets/img/meal/vegetable-noodle.webp";
 import { flameOutline, restaurantOutline, starOutline } from "ionicons/icons";
 import { useState } from "react";
 import axios from "axios";
@@ -67,7 +67,7 @@ const Index = () => {
     }
     getMenu();
     getCategory();
-    console.log(menus);
+    // console.log(menus);
   }, []);
   return (
     <>
@@ -151,7 +151,7 @@ const Index = () => {
               </div>
             </div>
           ))}
-          <div className="meal noodle all">
+          {/* <div className="meal noodle all">
             <img
               className="meal-img"
               src={vegetableNoodle}
@@ -336,7 +336,7 @@ const Index = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

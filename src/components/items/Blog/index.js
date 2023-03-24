@@ -11,8 +11,8 @@ const Index = () => {
   useEffect(() => {
     getBlog();
     getBlogCategory();
-    console.log(blogs);
-    console.log(categories);
+    // console.log(blogs);
+    // console.log(categories);
   }, []);
 
   const getBlogCategory = async () => {
