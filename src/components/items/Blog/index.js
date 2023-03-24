@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/footer";
+import axios from "axios";
 import "../../../assets/css/blog.css";
 
-const index = () => {
+const Index = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    getBlog();
+    getBlogCategory();
+    console.log(blogs);
+    console.log(categories);
+  }, []);
+
+  const getBlogCategory = async () => {
+    const response = await axios.get("http://localhost:5000/blog-category");
+    setCategories(response.data);
+  };
+
+  const getBlog = async () => {
+    const response = await axios.get("http://localhost:5000/blog");
+    setBlogs(response.data);
+  };
   return (
     <>
       <Navbar activeBar="blog" />
@@ -15,25 +35,19 @@ const index = () => {
       </section>
       <section className="blog-container">
         <div className="blogs">
-          <div className="post">
-            <div className="card">
-              <div className="post-image">
-                <img
-                  src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
+          {blogs.map((blog, index) => (
+            <div className="post" key={index}>
+              <div className="card">
+                <div className="post-image">
+                  <img src={blog.url} alt="" />
+                </div>
+                <h3>{blog.Nama}</h3>
+                <p>{blog.Deskripsi}</p>
+                <button className="btn btn-blog ">Read More</button>
               </div>
-              <h3>Dessert</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt dolorem consequatur molestiae dolor itaque sunt natus
-                quam voluptates nesciunt nemo voluptatibus, fugit fuga laborum
-                aperiam, pariatur provident earum quidem accusamus.
-              </p>
-              <button className="btn btn-blog ">Read More</button>
             </div>
-          </div>
-          <div className="post">
+          ))}
+          {/* <div className="post">
             <div className="card">
               <div className="post-image">
                 <img
@@ -86,11 +100,17 @@ const index = () => {
               </p>
               <button className="btn btn-blog ">Read More</button>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="category">
           <h2>Categories</h2>
-          <hr />
+          {categories.map((category, index) => (
+            <>
+              <hr key={index} />
+              <a href="#">{category.Nama}</a>
+            </>
+          ))}
+          {/* <hr />
           <a href="#">Dessert</a>
           <hr />
           <a href="#">Vegetables</a>
@@ -100,7 +120,7 @@ const index = () => {
           <a href="#">Beverages</a>
           <hr />
           <a href="#">Snacks</a>
-          <hr />
+          <hr /> */}
         </div>
       </section>
 
@@ -109,4 +129,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

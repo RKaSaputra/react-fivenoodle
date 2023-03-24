@@ -13,8 +13,26 @@ import img5 from "../../../assets/img/meal/img5.jpg";
 import spaghettiVegan from "../../../assets/img/meal/spaghetti-vegan.webp";
 import vegetableNoodle from "../../../assets/img/meal/vegetable-noodle.webp";
 import { flameOutline, restaurantOutline, starOutline } from "ionicons/icons";
+import { useState } from "react";
+import axios from "axios";
+// import { toLower } from "ionicons/dist/types/components/icon/utils";
 
 const Index = () => {
+  const [categories, setCategories] = useState([]);
+  const [menus, setMenus] = useState([]);
+
+  const getCategory = async () => {
+    const response = await axios.get("http://localhost:5000/category");
+    setCategories(response.data);
+    // console.log(response.data);
+  };
+
+  const getMenu = async () => {
+    const response = await axios.get("http://localhost:5000/menu");
+    setMenus(response.data);
+    // console.log(response.data);
+  };
+
   useEffect(() => {
     const menuNoodle = document.querySelectorAll(".nav-link-menu");
     const foodItems = document.querySelectorAll(".meal");
@@ -47,6 +65,9 @@ const Index = () => {
         }
       });
     }
+    getMenu();
+    getCategory();
+    console.log(menus);
   }, []);
   return (
     <>
@@ -66,7 +87,18 @@ const Index = () => {
                 All
               </a>
             </li>
-            <li>
+            {categories.map((category, index) => (
+              <li key={index}>
+                <a
+                  className="nav-link-menu"
+                  id={category.name.toLowerCase()}
+                  href={`#${category.name.toLowerCase()}`}
+                >
+                  {category.name}
+                </a>
+              </li>
+            ))}
+            {/* <li>
               <a className="nav-link-menu" id="noodle" href="#noodle">
                 Noodle
               </a>
@@ -80,11 +112,45 @@ const Index = () => {
               <a className="nav-link-menu" id="desert" href="#desert">
                 desert
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 
         <div className="container grid grid-menu grid--3-cols margin-bottom-md">
+          {menus.map((menu, index) => (
+            <div key={index} className="meal noodle all">
+              <img className="meal-img" src={menu.url} alt={menu.name} />
+              <div className="meal-content">
+                <p className="meal-title">{menu.name}</p>
+                <ul className="meal-attributes">
+                  <li className="meal-attribute">
+                    <IonIcon
+                      className="meal-icon"
+                      icon={flameOutline}
+                    ></IonIcon>
+                    <span>
+                      <strong>{menu.calories}</strong> Calories
+                    </span>
+                  </li>
+                  <li className="meal-attribute">
+                    <IonIcon
+                      className="meal-icon"
+                      icon={restaurantOutline}
+                    ></IonIcon>
+                    <span>
+                      NutriScore &reg; <strong>{menu.nutriScore}</strong>
+                    </span>
+                  </li>
+                  <li className="meal-attribute">
+                    <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
+                    <span>
+                      <strong>{menu.rating}</strong> Rating
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ))}
           <div className="meal noodle all">
             <img
               className="meal-img"
