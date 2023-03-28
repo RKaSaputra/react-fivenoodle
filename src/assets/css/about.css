@@ -161,10 +161,6 @@
 }
 
 @media (max-width: 1300px) {
-  .nav-menu {
-    width: 50%;
-  }
-
   .heading-primary span {
     font-size: 44px;
   }
@@ -191,10 +187,6 @@
   }
 }
 @media (max-width: 800px) {
-  .nav-menu {
-    width: 80%;
-  }
-
   .img-about {
     width: 100%;
   }

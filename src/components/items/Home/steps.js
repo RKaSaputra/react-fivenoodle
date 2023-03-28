@@ -7,13 +7,13 @@ import App3 from "./../../../assets/img/app/App3.PNG";
 const steps = () => {
   return (
     <div>
-      <section class="section-how">
-        <div class="container">
-          <span class="subheading">How Fivenoodle Works</span>
-          <h2 class="heading-secondary head-how">
+      <section className="section-how">
+        <div className="container">
+          <span className="subheading">How Fivenoodle Works</span>
+          <h2 className="heading-secondary head-how">
             Ordering delicious food at home was never this easy!
           </h2>
-          <p class="how-description">
+          <p className="how-description">
             With our Fivenoodle app, you can customize your order and have it
             delivered to your door in fastest way. All you have to do is follow
             3 simple steps, order quick and easy with our simple-to-use
@@ -25,44 +25,46 @@ const steps = () => {
           </p>
         </div>
 
-        <div class="container grid grid--2-cols grid--center">
-          <div class="step-text-box">
-            <p class="step-number">Step 1</p>
-            <h3 class="heading-tertiary">Tell us what you like</h3>
-            <p class="step-description">
+        <div className="container grid grid--2-cols grid--center">
+          <div className="step-text-box">
+            <p className="step-number">Step 1</p>
+            <h3 className="heading-tertiary">Tell us what you like</h3>
+            <p className="step-description">
               Never again waste time thinking about what to eat! Fivenoodle will
               recommend your meal that suits you!. It makes sure you get all the
               nutrients and vitamins you need, no matter what diet you follow!
             </p>
           </div>
-          <div class="step-img-box">
-            <img class="step-img" src={App1} alt="main apps screen" />
+          <div className="step-img-box">
+            <img className="step-img" src={App1} alt="main apps screen" />
           </div>
 
-          <div class="step-img-box">
-            <img class="step-img" src={App2} alt="order list screen" />
+          <div className="step-img-box">
+            <img className="step-img" src={App2} alt="order list screen" />
           </div>
-          <div class="step-text-box">
-            <p class="step-number">Step 2</p>
-            <h3 class="heading-tertiary">Approve your meal plan</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">Step 2</p>
+            <h3 className="heading-tertiary">Approve your meal plan</h3>
+            <p className="step-description">
               Approve the meal plan generated for you by Fivenoodle AI. You can
               change ingredients, swap entire meals, or even add your own
               recipes. Our chef can adapt any ingredient you want.
             </p>
           </div>
 
-          <div class="step-text-box">
-            <p class="step-number">Step 3</p>
-            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">Step 3</p>
+            <h3 className="heading-tertiary">
+              Receive meals at convenient time
+            </h3>
+            <p className="step-description">
               Best chefs in town will cook your selected meal every day, and we
               will deliver it to your door whenever works best for you. You can
               change delivery schedule and address daily!
             </p>
           </div>
-          <div class="step-img-box">
-            <img class="step-img" src={App3} alt="delivery screen" />
+          <div className="step-img-box">
+            <img className="step-img" src={App3} alt="delivery screen" />
           </div>
         </div>
       </section>

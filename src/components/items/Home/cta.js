@@ -3,18 +3,18 @@ import React from "react";
 const cta = () => {
   return (
     <div>
-      <section class="section-cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Subscribe for our product</h2>
-              <p class="cta-text">
+      <section className="section-cta">
+        <div className="container">
+          <div className="cta">
+            <div className="cta-text-box">
+              <h2 className="heading-secondary">Subscribe for our product</h2>
+              <p className="cta-text">
                 Get your noodle on with these healthy and delicious recipes.
                 With so many flavors to choose from, you won't be bored with
                 your food!
               </p>
 
-              <form class="cta-form" action="#">
+              <form className="cta-form" action="#">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -47,11 +47,11 @@ const cta = () => {
                   </select>
                 </div>
 
-                <button class="btn btn--form">Subscribe Now</button>
+                <button className="btn btn--form">Subscribe Now</button>
               </form>
             </div>
             <div
-              class="cta-img-box"
+              className="cta-img-box"
               role="img"
               aria-label="Women Enjoying Noodle"
             ></div>

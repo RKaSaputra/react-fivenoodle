@@ -5,14 +5,12 @@ import "../../../assets/css/home.css";
 import "../../../assets/css/contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
-  faLocationDot,
-  faPhoneVolume,
   faHome,
   faPhone,
   faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Index = () => {
   const form = useRef();
@@ -30,6 +28,13 @@ const Index = () => {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Email has been sent",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         },
         (error) => {
           console.log(error.text);
@@ -54,13 +59,11 @@ const Index = () => {
             <h3>Office</h3>
             <div>
               <FontAwesomeIcon className="get" icon={faHome} />
-              {/* <i class="fa-solid fa-home get"></i> */}
               <p>Jl.Soedirman, Jakarta Selatan</p>
             </div>
             <h3>Phone</h3>
             <div>
               <FontAwesomeIcon className="get" icon={faPhone} />
-              {/* <i class="fa-solid fa-phone-alt get"></i> */}
               <p>
                 (+62) 812 456 789 <br />
                 (+62) 898 765 432
@@ -69,7 +72,6 @@ const Index = () => {
             <h3>Support</h3>
             <div>
               <FontAwesomeIcon className="get" icon={faEnvelopeOpenText} />
-              {/* <i class="fa-solid fa-envelope-open-text get"></i> */}
               <p>fivenoodle@gmail.com</p>
             </div>
           </div>
@@ -105,50 +107,6 @@ const Index = () => {
           <button className="btn btn-send">SEND</button>
         </form>
       </section>
-      {/* <div className="email-section">
-        <div className="section-contact-left">
-          <div className="title-contact">
-            <h1>CONTACT US</h1>
-          </div>
-          <div className="option-contact">
-            <div className="card-contact">
-              <FontAwesomeIcon className="icon" icon={faLocationDot} />
-              <p>Jakarta, Gg.Kenari No.88</p>
-            </div>
-            <div className="card-contact">
-              <i className="fa-regular fa-envelope"></i>
-              <FontAwesomeIcon className="icon" icon={faEnvelope} />
-              <p>five@noodle.com</p>
-            </div>
-            <div className="card-contact">
-              <FontAwesomeIcon className="icon" icon={faPhoneVolume} />
-              <i className="fa-brands fa-whatsapp"></i>
-              <p>+62 123 456 789</p>
-            </div>
-          </div>
-        </div>
-        <div className="section-contact-right">
-          <h1>Send Us A Message</h1>
-          <form ref={form} onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="fullname"
-              id="fullname"
-              placeholder="fullname"
-            />
-            <input type="text" name="email" id="email" placeholder="email" />
-            <input type="text" name="phone" id="phone" placeholder="phone" />
-            <textarea
-              type="text"
-              name="yourmessage"
-              id="yourmessage"
-              rows="6"
-              placeholder="your message"
-            ></textarea>
-            <button className="btn btn-send">SEND</button>
-          </form>
-        </div>
-      </div> */}
       <Footer />
     </>
   );

@@ -22,13 +22,15 @@ const Index = () => {
   const [menus, setMenus] = useState([]);
 
   const getCategory = async () => {
-    const response = await axios.get("http://localhost:5000/category");
+    const response = await axios.get(
+      `${process.env.REACT_APP_API_URL}/category`
+    );
     setCategories(response.data);
     // console.log(response.data);
   };
 
   const getMenu = async () => {
-    const response = await axios.get("http://localhost:5000/menu");
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/menu`);
     setMenus(response.data);
     // console.log(response.data);
   };
@@ -98,21 +100,6 @@ const Index = () => {
                 </a>
               </li>
             ))}
-            {/* <li>
-              <a className="nav-link-menu" id="noodle" href="#noodle">
-                Noodle
-              </a>
-            </li>
-            <li>
-              <a className="nav-link-menu" id="sphagetti" href="#spaghetti">
-                Spaghetti
-              </a>
-            </li>
-            <li>
-              <a className="nav-link-menu" id="desert" href="#desert">
-                desert
-              </a>
-            </li> */}
           </ul>
         </div>
 
@@ -151,192 +138,6 @@ const Index = () => {
               </div>
             </div>
           ))}
-          {/* <div className="meal noodle all">
-            <img
-              className="meal-img"
-              src={vegetableNoodle}
-              alt="Vegetable Noodle"
-            />
-            <div className="meal-content">
-              <p className="meal-title">Vegetable Noodle</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>650</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>83</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="meal sphagetti all">
-            <img
-              className="meal-img"
-              src={spaghettiVegan}
-              alt="Spaghetti Vegan"
-            />
-            <div className="meal-content">
-              <p className="meal-title">Spaghetti Vegan</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>600</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>79</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="meal noodle all">
-            <img
-              className="meal-img"
-              src={greenUdonImg}
-              alt="Spaghetti Vegan"
-            />
-            <div className="meal-content">
-              <p className="meal-title">Green Udon</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>700</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>88</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="meal desert all">
-            <img className="meal-img" src={img1} alt="Kelengkeng Kiamboy" />
-            <div className="meal-content">
-              <p className="meal-title">Kelengkeng Kiamboy</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>600</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>79</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="meal desert all">
-            <img className="meal-img" src={img5} alt="Apple Tart" />
-            <div className="meal-content">
-              <p className="meal-title">Apple Tart</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>600</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>79</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="meal desert all">
-            <img className="meal-img" src={img3} alt="Ajitsuke Tamago" />
-            <div className="meal-content">
-              <p className="meal-title">Ajitsuke Tamago</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={flameOutline}></IonIcon>
-                  <span>
-                    <strong>1900</strong> Calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon
-                    className="meal-icon"
-                    icon={restaurantOutline}
-                  ></IonIcon>
-                  <span>
-                    NutriScore &reg; <strong>80</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IonIcon className="meal-icon" icon={starOutline}></IonIcon>
-                  <span>
-                    <strong>4.9</strong> Rating
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </div>
       </section>
       <Footer />

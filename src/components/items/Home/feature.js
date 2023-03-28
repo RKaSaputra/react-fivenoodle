@@ -8,14 +8,14 @@ import { leafOutline } from "ionicons/icons";
 const feature = () => {
   return (
     <div>
-      <section class="section-feature">
-        <div class="container">
-          <span class="subheading">Delicious Healthy Noodle</span>
-          <h2 class="heading-secondary head-how">
+      <section className="section-feature">
+        <div className="container">
+          <span className="subheading">Delicious Healthy Noodle</span>
+          <h2 className="heading-secondary head-how">
             Revolutionary noodle with gluten-free, vegan, and free of
             carcinogens
           </h2>
-          <p class="how-description">
+          <p className="how-description">
             Fivenoodle is made of 100% natural and organic ingredients. It
             contains no preservatives, artificial coloring, or MSG. Say goodbye
             to regular noodles! Introducing Fivenoodle, the healthy noodle that
@@ -32,39 +32,39 @@ const feature = () => {
             choice for a healthy meal on-the-go.
           </p>
         </div>
-        <div class="container grid grid--4-cols">
-          <div class="feature">
-            <IonIcon class="feature-icon" icon={nutritionOutline}></IonIcon>
-            <p class="feature-title">Best Recipes</p>
-            <p class="feature-text">
+        <div className="container grid grid--4-cols">
+          <div className="feature">
+            <IonIcon className="feature-icon" icon={nutritionOutline}></IonIcon>
+            <p className="feature-title">Best Recipes</p>
+            <p className="feature-text">
               Fivenoodle is a company that specializes in providing you the best
               noodle recipes to make the best noodles! We are committed to
               offering you the most delicious and unique noodle recipes on the
               market.
             </p>
           </div>
-          <div class="feature">
-            <IonIcon class="feature-icon" icon={leafOutline}></IonIcon>
-            <p class="feature-title">Fresh & Organic</p>
-            <p class="feature-text">
+          <div className="feature">
+            <IonIcon className="feature-icon" icon={leafOutline}></IonIcon>
+            <p className="feature-title">Fresh & Organic</p>
+            <p className="feature-text">
               Meet the new noodle that is so good for you, you'll wonder why you
               ever put anything else in your mouth! We use organic, fresh
               ingredients.
             </p>
           </div>
-          <div class="feature">
-            <IonIcon class="feature-icon" icon={happyOutline}></IonIcon>
-            <p class="feature-title">Happy Tummy</p>
-            <p class="feature-text">
+          <div className="feature">
+            <IonIcon className="feature-icon" icon={happyOutline}></IonIcon>
+            <p className="feature-title">Happy Tummy</p>
+            <p className="feature-text">
               Our noodles are also gluten-free, vegan, and free of
               preservatives. We should have known, that our customers would want
               the best so we offer a wide variety of noodle shapes and sizes.
             </p>
           </div>
-          <div class="feature">
-            <IonIcon class="feature-icon" icon={earthOutline}></IonIcon>
-            <p class="feature-title">Zero Waste</p>
-            <p class="feature-text">
+          <div className="feature">
+            <IonIcon className="feature-icon" icon={earthOutline}></IonIcon>
+            <p className="feature-title">Zero Waste</p>
+            <p className="feature-text">
               Fivenoodle Feature is proud to be a company that is committed to
               zero waste. We only support plastic-free packaging, and our
               products are recyclable.
